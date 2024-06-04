@@ -315,7 +315,7 @@ object Form1: TForm1
     Width = 56
     Caption = 'ShowM'
     Font.Style = [fsBold]
-    OnClick = Button26Click
+    OnClick = Button25Click
     ParentFont = False
     TabOrder = 26
   end
@@ -326,7 +326,7 @@ object Form1: TForm1
     Width = 56
     Caption = 'MR'
     Font.Style = [fsBold]
-    OnClick = Button27Click
+    OnClick = Button25Click
     ParentFont = False
     TabOrder = 27
   end
@@ -337,7 +337,7 @@ object Form1: TForm1
     Width = 56
     Caption = 'M+'
     Font.Style = [fsBold]
-    OnClick = Button28Click
+    OnClick = Button25Click
     ParentFont = False
     TabOrder = 28
   end
@@ -348,7 +348,7 @@ object Form1: TForm1
     Width = 56
     Caption = 'M-'
     Font.Style = [fsBold]
-    OnClick = Button29Click
+    OnClick = Button25Click
     ParentFont = False
     TabOrder = 29
   end
@@ -359,7 +359,7 @@ object Form1: TForm1
     Width = 56
     Caption = 'MS'
     Font.Style = [fsBold]
-    OnClick = Button30Click
+    OnClick = Button25Click
     ParentFont = False
     TabOrder = 30
   end

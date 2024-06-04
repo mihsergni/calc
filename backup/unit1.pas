@@ -185,16 +185,49 @@ case oper of
 4 : Edit1.Text:=FloatToStr(chislo / s_f);
 end;
 
-
-
-
-//flag:=0;
+flag:=1;
 
 end;
 
 procedure TForm1.Button25Click(Sender: TObject);
+var capt : string;
 begin
-  pamyat := 0;
+
+capt := (Sender as TButton).Caption;
+
+if capt = 'MC' then pamyat := 0;
+
+if capt = 'MR' then Edit1.Text := FloatToStr(pamyat);
+
+if capt = 'M+' then  pamyat := pamyat + StrToFloatDef(Edit1.Text, 0);
+
+if capt = 'M+' then  pamyat := pamyat - StrToFloatDef(Edit1.Text, 0);
+
+if capt = 'MS' then pamyat := StrToFloatDef(Edit1.Text, 0);
+
+if capt = 'ShowM' then  ShowMessage(FloatToStr(pamyat));
+
+
+if pamyat <> 0 then
+begin
+Button25.Font.Style:=[fsBold];
+Button26.Font.Style:=[fsBold];
+Button27.Font.Style:=[fsBold];
+Button28.Font.Style:=[fsBold];
+Button29.Font.Style:=[fsBold];
+Button30.Font.Style:=[fsBold];
+end else
+begin
+  Button25.Font.Style:=[];
+  Button26.Font.Style:=[];
+  Button27.Font.Style:=[];
+  Button28.Font.Style:=[];
+  Button29.Font.Style:=[];
+  Button30.Font.Style:=[];
+end;
+
+
+
 end;
 
 procedure TForm1.Button26Click(Sender: TObject);
