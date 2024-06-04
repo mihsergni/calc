@@ -1,10 +1,10 @@
 object Form1: TForm1
   Left = 509
-  Height = 377
+  Height = 396
   Top = 304
   Width = 393
   Caption = 'Калькулятор для Интеркем'
-  ClientHeight = 377
+  ClientHeight = 396
   ClientWidth = 393
   OnCreate = FormCreate
   Position = poScreenCenter
@@ -26,7 +26,7 @@ object Form1: TForm1
   object Button1: TButton
     Left = 8
     Height = 40
-    Top = 88
+    Top = 106
     Width = 88
     Caption = '%'
     Font.Style = [fsBold]
@@ -37,9 +37,9 @@ object Form1: TForm1
   object Button2: TButton
     Left = 104
     Height = 40
-    Top = 88
+    Top = 106
     Width = 88
-    Caption = 'CE'
+    Caption = 'MR'
     Font.Style = [fsBold]
     OnClick = Button2Click
     ParentFont = False
@@ -48,7 +48,7 @@ object Form1: TForm1
   object Button3: TButton
     Left = 200
     Height = 40
-    Top = 88
+    Top = 106
     Width = 88
     Caption = 'C'
     Font.Style = [fsBold]
@@ -59,7 +59,7 @@ object Form1: TForm1
   object Button4: TButton
     Left = 296
     Height = 40
-    Top = 88
+    Top = 106
     Width = 88
     Caption = 'Del'
     Font.Style = [fsBold]
@@ -70,7 +70,7 @@ object Form1: TForm1
   object Button5: TButton
     Left = 8
     Height = 40
-    Top = 136
+    Top = 154
     Width = 88
     Caption = '1/x'
     Font.Style = [fsBold]
@@ -81,7 +81,7 @@ object Form1: TForm1
   object Button6: TButton
     Left = 104
     Height = 40
-    Top = 136
+    Top = 154
     Width = 88
     Caption = 'X2'
     Font.Style = [fsBold]
@@ -92,7 +92,7 @@ object Form1: TForm1
   object Button7: TButton
     Left = 200
     Height = 40
-    Top = 136
+    Top = 154
     Width = 88
     Caption = 'Корень'
     Font.Style = [fsBold]
@@ -103,7 +103,7 @@ object Form1: TForm1
   object Button8: TButton
     Left = 296
     Height = 40
-    Top = 136
+    Top = 154
     Width = 88
     Caption = '/'
     Font.Style = [fsBold]
@@ -114,7 +114,7 @@ object Form1: TForm1
   object Button9: TButton
     Left = 8
     Height = 40
-    Top = 184
+    Top = 202
     Width = 88
     Caption = '7'
     Font.Style = [fsBold]
@@ -125,7 +125,7 @@ object Form1: TForm1
   object Button10: TButton
     Left = 104
     Height = 40
-    Top = 184
+    Top = 202
     Width = 88
     Caption = '8'
     Font.Style = [fsBold]
@@ -136,7 +136,7 @@ object Form1: TForm1
   object Button11: TButton
     Left = 200
     Height = 40
-    Top = 184
+    Top = 202
     Width = 88
     Caption = '9'
     Font.Style = [fsBold]
@@ -147,7 +147,7 @@ object Form1: TForm1
   object Button12: TButton
     Left = 296
     Height = 40
-    Top = 184
+    Top = 202
     Width = 88
     Caption = '*'
     Font.Style = [fsBold]
@@ -158,7 +158,7 @@ object Form1: TForm1
   object Button13: TButton
     Left = 8
     Height = 40
-    Top = 232
+    Top = 250
     Width = 88
     Caption = '4'
     Font.Style = [fsBold]
@@ -169,7 +169,7 @@ object Form1: TForm1
   object Button14: TButton
     Left = 104
     Height = 40
-    Top = 232
+    Top = 250
     Width = 88
     Caption = '5'
     Font.Style = [fsBold]
@@ -180,7 +180,7 @@ object Form1: TForm1
   object Button15: TButton
     Left = 200
     Height = 40
-    Top = 232
+    Top = 250
     Width = 88
     Caption = '6'
     Font.Style = [fsBold]
@@ -191,7 +191,7 @@ object Form1: TForm1
   object Button16: TButton
     Left = 296
     Height = 40
-    Top = 232
+    Top = 250
     Width = 88
     Caption = '-'
     Font.Style = [fsBold]
@@ -202,7 +202,7 @@ object Form1: TForm1
   object Button17: TButton
     Left = 8
     Height = 40
-    Top = 280
+    Top = 298
     Width = 88
     Caption = '1'
     Font.Style = [fsBold]
@@ -213,7 +213,7 @@ object Form1: TForm1
   object Button18: TButton
     Left = 104
     Height = 40
-    Top = 280
+    Top = 298
     Width = 88
     Caption = '2'
     Font.Style = [fsBold]
@@ -224,7 +224,7 @@ object Form1: TForm1
   object Button19: TButton
     Left = 200
     Height = 40
-    Top = 280
+    Top = 298
     Width = 88
     Caption = '3'
     Font.Style = [fsBold]
@@ -235,7 +235,7 @@ object Form1: TForm1
   object Button20: TButton
     Left = 296
     Height = 40
-    Top = 280
+    Top = 298
     Width = 88
     Caption = '+'
     Font.Style = [fsBold]
@@ -246,7 +246,7 @@ object Form1: TForm1
   object Button21: TButton
     Left = 8
     Height = 40
-    Top = 328
+    Top = 346
     Width = 88
     Caption = '+/-'
     Font.Style = [fsBold]
@@ -257,7 +257,7 @@ object Form1: TForm1
   object Button22: TButton
     Left = 104
     Height = 40
-    Top = 328
+    Top = 346
     Width = 88
     Caption = '0'
     Font.Style = [fsBold]
@@ -268,7 +268,7 @@ object Form1: TForm1
   object Button23: TButton
     Left = 200
     Height = 40
-    Top = 328
+    Top = 346
     Width = 88
     Caption = ','
     Font.Style = [fsBold]
@@ -279,7 +279,7 @@ object Form1: TForm1
   object Button24: TButton
     Left = 296
     Height = 40
-    Top = 328
+    Top = 346
     Width = 88
     Caption = '='
     Font.Style = [fsBold]
@@ -295,5 +295,63 @@ object Form1: TForm1
     Alignment = taRightJustify
     AutoSize = False
     ParentColor = False
+  end
+  object Button25: TButton
+    Left = 8
+    Height = 25
+    Top = 70
+    Width = 56
+    Caption = 'MC'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 25
+  end
+  object Button26: TButton
+    Left = 328
+    Height = 25
+    Top = 70
+    Width = 56
+    Caption = 'Show'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 26
+  end
+  object Button27: TButton
+    Left = 72
+    Height = 25
+    Top = 70
+    Width = 56
+    Caption = 'MR'
+    TabOrder = 27
+  end
+  object Button28: TButton
+    Left = 136
+    Height = 25
+    Top = 70
+    Width = 56
+    Caption = 'M+'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 28
+  end
+  object Button29: TButton
+    Left = 200
+    Height = 25
+    Top = 70
+    Width = 56
+    Caption = 'M-'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 29
+  end
+  object Button30: TButton
+    Left = 264
+    Height = 25
+    Top = 70
+    Width = 56
+    Caption = 'MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 30
   end
 end

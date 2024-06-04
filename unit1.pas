@@ -29,7 +29,13 @@ type
     Button22: TButton;
     Button23: TButton;
     Button24: TButton;
+    Button25: TButton;
+    Button26: TButton;
+    Button27: TButton;
+    Button28: TButton;
+    Button29: TButton;
     Button3: TButton;
+    Button30: TButton;
     Button4: TButton;
     Button5: TButton;
     Button6: TButton;
@@ -158,6 +164,11 @@ begin
 
 s_f := StrToFloatDef(Edit1.Text, 0);
 
+if (s_f = 0) and (oper = 4) then
+begin
+ShowMessage('На ноль делить нельзя!');
+exit;
+end;
 
 case oper of
 1 : Edit1.Text:=FloatToStr(s_f + chislo);
@@ -173,12 +184,12 @@ end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
-  Edit1.Text:= '';
+  Edit1.Text:= '0';
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-  Edit1.Text:= '';
+  Edit1.Text:= '0';
   oper := 0;
 end;
 
