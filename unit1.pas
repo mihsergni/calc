@@ -233,23 +233,23 @@ end;
 procedure TForm1.Button26Click(Sender: TObject);
 begin
 
-ShowMessage(FloatToStr(pamyat));
+//ShowMessage(FloatToStr(pamyat));
 
 end;
 
 procedure TForm1.Button27Click(Sender: TObject);
 begin
-  Edit1.Text := FloatToStr(pamyat);
+  //Edit1.Text := FloatToStr(pamyat);
 end;
 
 procedure TForm1.Button28Click(Sender: TObject);
 begin
-  pamyat := pamyat + StrToFloatDef(Edit1.Text, 0);
+//  pamyat := pamyat + StrToFloatDef(Edit1.Text, 0);
 end;
 
 procedure TForm1.Button29Click(Sender: TObject);
 begin
-    pamyat := pamyat - StrToFloatDef(Edit1.Text, 0);
+  //  pamyat := pamyat - StrToFloatDef(Edit1.Text, 0);
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);

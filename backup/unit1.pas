@@ -201,7 +201,7 @@ if capt = 'MR' then Edit1.Text := FloatToStr(pamyat);
 
 if capt = 'M+' then  pamyat := pamyat + StrToFloatDef(Edit1.Text, 0);
 
-if capt = 'M+' then  pamyat := pamyat - StrToFloatDef(Edit1.Text, 0);
+if capt = 'M-' then  pamyat := pamyat - StrToFloatDef(Edit1.Text, 0);
 
 if capt = 'MS' then pamyat := StrToFloatDef(Edit1.Text, 0);
 
