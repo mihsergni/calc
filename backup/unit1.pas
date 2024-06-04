@@ -29,7 +29,13 @@ type
     Button22: TButton;
     Button23: TButton;
     Button24: TButton;
+    Button25: TButton;
+    Button26: TButton;
+    Button27: TButton;
+    Button28: TButton;
+    Button29: TButton;
     Button3: TButton;
+    Button30: TButton;
     Button4: TButton;
     Button5: TButton;
     Button6: TButton;
@@ -47,7 +53,13 @@ type
     procedure Button21Click(Sender: TObject);
     procedure Button23Click(Sender: TObject);
     procedure Button24Click(Sender: TObject);
+    procedure Button25Click(Sender: TObject);
+    procedure Button26Click(Sender: TObject);
+    procedure Button27Click(Sender: TObject);
+    procedure Button28Click(Sender: TObject);
+    procedure Button29Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button30Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
@@ -58,7 +70,7 @@ type
   private
 
   public
-    chislo : real;
+    chislo, pamyat : real;
     flag, oper : integer;
   end;
 
@@ -82,17 +94,17 @@ Edit1.Text := Edit1.Text + (Sender as TButton).Caption;
 
 end;
 
-procedure TForm1.Button16Click(Sender: TObject);
+procedure TForm1.Button16Click(Sender: TObject);      // Вычитание
 var s_f : real;
 begin
 oper :=2;
 flag := 1;
 s_f := StrToFloatDef(Edit1.Text, 0);
 chislo := s_f;
-Label1.Caption:=Edit1.Text;
+Label1.Caption:=Edit1.Text + ' - ';
 end;
 
-procedure TForm1.Button12Click(Sender: TObject);
+procedure TForm1.Button12Click(Sender: TObject);   // Умножение
 var s_f : real;
 begin
 oper :=3;
@@ -100,7 +112,7 @@ flag := 1;
 s_f := StrToFloatDef(Edit1.Text, 0);
 chislo := s_f;
 
-Label1.Caption:=Edit1.Text;
+Label1.Caption:=Edit1.Text + ' * ';
 
 end;
 
@@ -122,14 +134,14 @@ case oper of
 end;
 end;
 
-procedure TForm1.Button20Click(Sender: TObject);
+procedure TForm1.Button20Click(Sender: TObject);    // Сложение
 var s_f : real;
 begin
 oper := 1;
 flag := 1;
 s_f := StrToFloatDef(Edit1.Text, 0);
 chislo := s_f;
-Label1.Caption:=Edit1.Text;
+Label1.Caption:=Edit1.Text + ' + ';
 
 end;
 
@@ -164,6 +176,8 @@ ShowMessage('На ноль делить нельзя!');
 exit;
 end;
 
+Label1.Caption:=Label1.Caption + Edit1.Text;
+
 case oper of
 1 : Edit1.Text:=FloatToStr(s_f + chislo);
 2 : Edit1.Text:=FloatToStr(chislo - s_f);
@@ -172,18 +186,57 @@ case oper of
 end;
 
 
+
+
 //flag:=0;
 
+end;
+
+procedure TForm1.Button25Click(Sender: TObject);
+begin
+  pamyat := 0;
+end;
+
+procedure TForm1.Button26Click(Sender: TObject);
+begin
+
+ShowMessage(FloatToStr(pamyat));
+
+end;
+
+procedure TForm1.Button27Click(Sender: TObject);
+begin
+  Edit1.Text := FloatToStr(pamyat);
+end;
+
+procedure TForm1.Button28Click(Sender: TObject);
+begin
+  pamyat := pamyat + StrToFloatDef(Edit1.Text, 0);
+end;
+
+procedure TForm1.Button29Click(Sender: TObject);
+begin
+    pamyat := pamyat - StrToFloatDef(Edit1.Text, 0);
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
   Edit1.Text:= '0';
+  Label1.Caption:='';
+end;
+
+procedure TForm1.Button30Click(Sender: TObject);
+begin
+
+pamyat := StrToFloatDef(Edit1.Text, 0);
+
+
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
   Edit1.Text:= '0';
+  Label1.Caption:='';
   oper := 0;
 end;
 
@@ -238,20 +291,21 @@ end;
 Edit1.Text:=FloatToStr(sqrt(s_f));
 end;
 
-procedure TForm1.Button8Click(Sender: TObject);
+procedure TForm1.Button8Click(Sender: TObject);   // Деление
 var s_f : real;
 begin
 oper :=4;
 flag := 1;
 s_f := StrToFloatDef(Edit1.Text, 0);
 chislo := s_f;
-Label1.Caption:=Edit1.Text;
+Label1.Caption:=Edit1.Text + ' / ';
 
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   flag := 0;
+
 end;
 
 end.
